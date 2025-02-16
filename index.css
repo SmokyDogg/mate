@@ -13,7 +13,7 @@ body{
     background-size: cover;
     box-sizing: border-box;
     background-color: white;
-    gap: 30px;
+    gap: 50px;
     border-bottom: 0.5px solid rgb(128, 128, 128, 0.5);
 }
 .header-title{
@@ -56,12 +56,12 @@ body{
 }
 .header-menu:hover{
     background-color: rgb(128, 128, 128, 0.5);
+    scale: 1.1;
 }
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
     margin: 25px auto 0;
     border: 1px solid rgba(75, 72, 72, 0.7);
     border-radius: 15px 15px 45px 15px;
@@ -73,6 +73,7 @@ body{
     color: black;
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 600;
     margin: 0 0 40px 0;
     padding: 0;
 }
@@ -122,23 +123,30 @@ body{
     background-color: white;
     padding: 25px;
 }
-.form{
-    margin: 25px 0 0;
+.support-container{
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content:space-between;
+    width: 90%;
 }
-.form-input{
-    display: flex;
+.contacts{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-.label{
-    display: block;
-    width: 90px;
-    margin: 0 auto;
-    color: black;
-    font-size: 19px;
+.contact{
+    margin: 10px;
+    padding: 0;
+    text-align: center;
 
 }
-.form-submit{
-    margin: 0 auto
+.create{
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+    color: black;
+    text-decoration: none;
+}
+.create:hover{
+    color: rgba(75, 72, 72, 0.7);
+    scale: 1.2;
 }

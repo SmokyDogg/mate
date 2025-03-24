@@ -145,3 +145,32 @@ const scrollPrevC = function () {
 };
 
 prevButtonC.addEventListener("click", scrollPrevC);
+
+const scrollNextD = function () {
+  offset = offset + 414;
+  counter++;
+  cardsLineD.style.left = -offset + "px";
+  if (offset > 400) {
+    nextButtonD.disabled = true;
+  } else if (offset > 394) {
+    prevButtonD.disabled = false;
+  }
+  text.innerText = counter;
+};
+
+nextButtonD.addEventListener("click", scrollNextD);
+
+const scrollPrevD = function () {
+  offset = offset - 414;
+  counter--;
+  if (offset < 414) {
+    nextButtonD.disabled = false;
+  }
+  if (offset < 1) {
+    prevButtonD.disabled = true;
+  }
+  cardsLineD.style.left = -offset + "px";
+  text.innerText = counter;
+};
+
+prevButtonD.addEventListener("click", scrollPrevD);

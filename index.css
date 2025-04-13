@@ -110,7 +110,6 @@ body{
     display: flex;
     gap: 20px;
     position: relative;
-    transition: all ease 1s;
 }
 .images-line-b{
     width: 2444px;
